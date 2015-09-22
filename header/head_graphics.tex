@@ -1,0 +1,56 @@
+% =====================================================================
+% === LaTeX Header: Graphics ==========================================
+% =====================================================================
+% ---
+% ---
+% ---
+
+\usepackage{pdfpages}
+
+% --- Placement
+
+\usepackage{float}
+\usepackage{flafter}
+
+\usepackage[section]{placeins}
+
+\usepackage{subfig}
+\setcounter{lofdepth}{1}
+
+\usepackage{wrapfig}
+\setlength{\intextsep}{0.5\baselineskip}
+
+% Make float placement easier
+\renewcommand{\floatpagefraction}{.75} % vorher: .5
+\renewcommand{\textfraction}{.1}       % vorher: .2
+\renewcommand{\topfraction}{.8}        % vorher: .7
+\renewcommand{\bottomfraction}{.5}     % vorher: .3
+\setcounter{topnumber}{3}              % vorher: 2
+\setcounter{bottomnumber}{2}           % vorher: 1
+\setcounter{totalnumber}{5}            % vorher: 3
+
+% --- Captions
+
+% SideCaption
+\usepackage[rightcaption,ragged]{sidecap}
+\renewcommand\sidecaptionsep{2em}
+\sidecaptionvpos{table}{c}
+\sidecaptionvpos{figure}{c}
+
+\usepackage{caption}
+\captionsetup{
+   margin = 10pt,
+   font = {small,rm},
+   labelfont = {small,bf},
+   format = plain,
+   indention = 0em,
+   labelsep = colon,
+   justification = RaggedRight,
+   singlelinecheck = true,
+   position = bottom,
+   labelformat = parens
+}
+
+% Bugfix Workaround (???)
+\DeclareCaptionOption{parskip}[]{}
+\DeclareCaptionOption{parindent}[]{}

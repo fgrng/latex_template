@@ -1,0 +1,119 @@
+% =====================================================================
+% === Beamer Header ===================================================
+% =====================================================================
+% --- Filename:     beamerheader.tex
+% --- Author:       Fabian Grünig
+% ---               fabian@mathphys.fsk.uni-heidelberg.de
+% --- Created:      2011-12-19
+% --- Description:  Header für Beamer-Präsentationen
+% ---               auch org-mode
+% ---
+
+% ---------------------------------------------------------------------
+% --- Header ----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+\documentclass[
+  t, 
+  ngermanb
+]{beamer}
+
+\usepackage[ngermanb]{babel}
+% \usepackage{unicode-math, fontspec}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{ulem}
+
+\usepackage{tikz}
+  \usetikzlibrary{matrix}
+  \usetikzlibrary{fit}
+  \usetikzlibrary{backgrounds}
+  \usetikzlibrary{arrows}
+  \usetikzlibrary{shapes}
+  \usetikzlibrary{positioning}
+  \usetikzlibrary{mindmap}
+  \usetikzlibrary{decorations.markings}
+  \usetikzlibrary{decorations.pathreplacing}
+
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage{xcolor}
+
+\usepackage{bookmark}
+\usepackage{pifont}
+\usepackage{pgfpages}
+\usepackage{listings}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+
+% ---------------------------------------------------------------------
+% --- Design ----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+  \mode<presentation>{
+%      \useoutertheme[subsection=false]{smoothbars}
+      \useinnertheme{circles} % rectangles, circles, rounded
+      \usecolortheme[RGB={153,0,0}]{structure}
+      \definecolor{unihd}{RGB}{153,0,0}
+      \definecolor{dark}{RGB}{115,0,0}
+      \definecolor{light}{RGB}{241,229,229}
+      \usecolortheme{whale}
+		 \usecolortheme{orchid}
+%	   \usecolortheme{beaver}
+      \usefonttheme{professionalfonts}
+      \setbeamercovered{transparent}
+      \beamertemplatenavigationsymbolsempty
+%      \setbeameroption{show notes on second screen}
+      \setbeamertemplate{note page}[plain]
+      \setbeamertemplate{footline}[frame number]
+}
+
+% \mode<presentation>{%
+%   \definecolor{unihd}{RGB}{153,0,0}
+
+%   \usecolortheme[RGB={153,0,0}]{structure}
+%   \useoutertheme[subsection=false,compress]{smoothbars}
+%   \useinnertheme{circles}
+%   \usecolortheme{whale}
+
+%   \setbeamertemplate{items}[circle]
+%   \setbeamercovered{transparent}
+%   \setbeamertemplate{navigation symbols}{}
+% % \beamertemplatenavigationsymbolsempty
+%   \setbeamertemplate{note page}[plain]
+% }
+
+% ---------------------------------------------------------------------
+% --- Daten -----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+%
+% Dies ist eine Leiche aus Zeiten, in denen ich org-mode für 
+% Präsentationen verwenden wollte. Das war eine doofe Idee.
+% Ich war zu faul, dieses Setup zu ändern :(
+%
+
+% --- Definiere folgende Variablen in deinem tex-file
+% 
+%     \newcommand{\mytitle}{  }
+%     \newcommand{\myshorttitle}{  }
+%     \newcommand{\myauthor}{  }
+%     \newcommand{\myshortauthor}{  }
+%     \newcommand{\myinstitute}{  }
+%     \newcommand{\myshortinstitute}{  }
+%     \newcommand{\mysubject}{  }
+%     \newcommand{\mykeywords}{  }
+%     \newcommand{\mypagelayout}{  }
+%     \newcommand{\mystartview}{  }
+%     \newcommand{\mydate}{ }
+%
+% ---
+
+

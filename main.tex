@@ -1,0 +1,103 @@
+% =====================================================================
+% =====================================================================
+% --- Filename:     main.tex (tex-file)
+% --- Created:      2012-09-20
+% ---
+
+% =====================================================================
+
+% --- Thanks to:
+% --- ==========
+% --- + Moritz Brinkmann
+% --- + Matthias Pospiech
+% --- + Axel Wagner
+% --- + the internet
+
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% --- Header ----------------------------------------------------------
+% ---------------------------------------------------------------------
+
+% --- Configure Header files
+
+\providecommand\CONFonetwostyle{twoside}
+\providecommand\CONFdraftfinal{final}
+
+% --- Include Header files
+
+\input{header/head_base.tex}
+\input{header/head_math.tex}
+\input{header/head_typo.tex}
+\input{header/head_item.tex}
+\input{header/head_graphics.tex}
+\input{header/head_bib.tex}
+\input{header/head_debug.tex}
+
+% --- Document data
+
+\title{Dies ist ein Titel}
+\author{Ein Autor}
+\date{\today}
+
+% --- Bibliographie
+
+\addbibresource{main.bib}
+
+% ---------------------------------------------------------------------
+% --- Document --------------------------------------------------------
+% ---------------------------------------------------------------------
+
+\begin{document}
+
+% --- Titelei ---------------------------------------------------------
+
+\input{content/title.tex}
+
+% --- ToC -------------------------------------------------------------
+
+% \newpage
+\tableofcontents
+\thispagestyle{empty}
+% \newpage
+
+% --- Content ---------------------------------------------------------
+
+% --- Layout
+
+\setcounter{page}{1}
+
+\clearscrheadfoot
+
+\ihead{\leftmark}
+\ohead{\rightmark}
+
+\ifoot{}
+\ofoot{\thepage}
+
+% --- 
+
+% Insert horizontal line in ToC.
+% \addtocontents{toc}{\protect\mbox{}\protect\hrulefill\par}
+
+% --- 
+
+\input{content/stuff.tex}
+
+% --- Anhang ----------------------------------------------------------
+
+% \section*{Literatur}
+% \phantomsection\addcontentsline{toc}{section}{Literatur}
+% \fancyhead{}
+
+% \subsubsection*{\nameref{sec:grundlagen}}
+% \printbibliography[heading=none,section=1]
+
+\nocite{*}
+\printbibliography
+
+% ---------------------------------------------------------------------
+% --- End -------------------------------------------------------------
+% ---------------------------------------------------------------------
+
+\end{document}
